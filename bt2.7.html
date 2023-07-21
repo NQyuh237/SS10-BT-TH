@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.7</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("Nhập hệ số a của phương trình bậc 2");
+        let b = prompt("Nhập hệ số b của phương trình bậc 2");
+        let c = prompt("Nhập hệ số c của phương trình bậc 2");
+        let x1, x2;
+        if (a == 0) {
+            if (b == 0) {
+                if (c == 0) {
+                    alert("Phương trình vô số nghiệm");
+                } else {
+                    alert("Phương trình vô nghiệm");
+                }
+            } else {
+                x1 = -c / b;
+                alert("Nghiệm của phương trình là " + x1);
+            }
+        } else {
+            let delta = b * b - 4 * a * c;
+            if (delta < 0) {
+                alert("Phương trình vô nghiệm");
+            } else if (delta == 0) {
+                x1 = -b / (2 * a);
+                alert("Nghiệm kép của phương trình là " + x1);
+            } else {
+                x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                alert("Hai nghiệm của phương trình là " + x1 + " và " + x2);
+            }
+        }
+    </script>
+</body>
+
+</html>

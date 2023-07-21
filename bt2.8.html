@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.8</title>
+</head>
+
+<body>
+    <script>
+        let number = prompt("Nhập một số nguyên");
+        let isAge;
+        if (number > 0 && number < 120) {
+            isAge = true;
+        } else {
+            isAge = false;
+        }
+        if (isAge) {
+            alert("Số bạn nhập là " + number + " và nó là tuổi của một người");
+        } else {
+            alert("Số bạn nhập là " + number + " và nó không phải là tuổi của một người");
+        }
+    </script>
+</body>
+
+</html>

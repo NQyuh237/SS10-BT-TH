@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.9</title>
+</head>
+<body>
+    <script>
+            function isTriangle(a, b, c) {
+                if (a > 0 && b > 0 && c > 0 && a + b > c && b + c > a && a + c > b) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            console.log(isTriangle(3, 4, 5)); // In ra true
+            console.log(isTriangle(1, 2, 3)); // In ra false
+            console.log(isTriangle(5, 12, 13)); // In ra true
+
+    </script>
+</body>
+</html>

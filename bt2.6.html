@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.6</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập hệ số a của phương trình bậc 1");
+        let b = +prompt("Nhập hệ số b của phương trình bậc 1");
+        let x;
+        if (a == 0) {
+            if (b == 0) {
+                alert("Phương trình vô số nghiệm");
+            } else {
+                alert("Phương trình vô nghiệm");
+            }
+        } else {
+            x = -b / a;
+            alert("Nghiệm của phương trình là " + x);
+        }
+    </script>
+</body>
+
+</html>

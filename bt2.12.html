@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt2.12</title>
+</head>
+
+<body>
+    <script>
+        let tienvay = +prompt("Nhập số tiền vay:");
+        let years = +prompt("Nhập số năm vay:");
+        let laisuat = +prompt("Nhập lãi suất:");
+        let trathang = (tienvay / (years * 12)) + (tienvay * laisuat) / (100 * 12);
+        let tong = trathang * years * 12;
+        alert(`Số tiền trả hàng tháng là: " ${trathang} " đồng`);
+        alert(`Tổng số tiền phải trả là: " ${tong} " đồng`);
+    </script>
+</body>
+
+</html>
